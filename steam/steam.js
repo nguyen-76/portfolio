@@ -57,7 +57,7 @@ const renderGamesbyGenres = async (value) => {
         </div>
   <div class="detail">
     <div class="gametitle">${data.name}</div>
-    <div class="gameprice">$ ${data.price}</div>
+    <div class="gameprice">$${data.price}</div>
   </div>`;
       display.appendChild(newDiv);
     });
