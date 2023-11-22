@@ -51,7 +51,7 @@ const renderGamesbyGenres = async (value) => {
     data.data.forEach((data) => {
       const newDiv = document.createElement("div");
       newDiv.classList.add("wrapper");
-      newDiv.innerHTML = ` <div class="gameinfo">
+      newDiv.innerHTML = `<div class="gameinfo">
         <div class="gameicon">
           <img src="${data.header_image}" width="100%" id="${data.appid}" />
         </div>
