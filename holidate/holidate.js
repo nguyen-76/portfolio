@@ -12,7 +12,6 @@ const getCountries = async () => {
         const url = `https://holidayapi.com/v1/countries?pretty&key=${API_KEY}`;
         const res = await fetch(url);
         const data = await res.json();
-        console.log("data", data);
         return data;
     } catch (err) {
         console.log("err", err);
@@ -46,7 +45,6 @@ const getLanguages = async () => {
         const url = `https://holidayapi.com/v1/languages?pretty&key=${API_KEY}`;
         const res = await fetch(url);
         const data = await res.json();
-        console.log("data", data);
         return data;
     } catch (err) {
         console.log("err", err);
@@ -110,7 +108,6 @@ const getHoliday = async () => {
         const url = `https://holidayapi.com/v1/holidays?pretty&key=${API_KEY}${queryString}`;
         const res = await fetch(url);
         const data = await res.json();
-        console.log("data", data);
         return data;
     } catch (err) {
         console.log("err", err)
