@@ -115,7 +115,7 @@ const renderAllGames = async () => {
 
 renderAllGames();
 
-// get all Games with app name from API
+// search for game
 let queryString = "";
 const keyword = document.getElementById("store-search");
 const searchButton = document.querySelector(".search-btn");
