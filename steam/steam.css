@@ -1,0 +1,135 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+  
+*,
+*:before,
+*:after {
+  margin: 0;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #2a475e;
+  color: #c7d5e0;
+  overflow-x: hidden;
+}
+
+#header {
+  background-color: #171a21;
+  color: #c7d5e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
+  height: 50px;
+}
+
+#header .about-page {
+  list-style-type: none;
+  display: flex;
+  gap: 2em;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+#main .search-page {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #66c0f4;
+  padding-right: 5px;
+}
+input[type="text"] {
+  flex-grow: 1;
+  height: 36px;
+  color: #000;
+  border: none;
+  width: 100%;
+  font-size: 14px;
+}
+.search-page {
+  position: relative;
+}
+.search-page button {
+  height: 36px;
+  width: 36px;
+  position: absolute;
+  background-color: #fff;
+  right: 1%;
+  border: none;
+}
+.search-page button:hover {
+  filter: brightness(130%);
+}
+#genre-list {
+  list-style-type: none;
+  padding: 5px 5px;
+  margin-top: 5px;
+}
+#genre-list li {
+  cursor: pointer;
+}
+#genre-list li:hover {
+  font-weight: bold;
+}
+#main #game-genre {
+  list-style-type: none;
+  margin-top: 10px;  
+}
+#game-genre li {
+  margin: 2px 0;
+}
+#main #display {
+  display: flex;
+  width: 80vw;
+  padding: 1rem;
+  margin: 10px auto;
+  flex-wrap: wrap;  
+}
+#main #wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main .gameinfo {
+  border: 1px solid black;
+  margin: 5px 10px;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#main .ganmeicon {
+  height: 60%;
+}
+#main .detail {
+  height: auto;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  background-color: #316282;
+}
+.btn-group {
+  align-self: flex-end;
+  margin-top: 10px;
+}
