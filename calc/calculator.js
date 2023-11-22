@@ -59,7 +59,7 @@ const equal = () => {
     operator = null;
 };
 
-const clear = () => {
+const erase = () => {
     debugger;
     num1 = "";
     num2 = "";
