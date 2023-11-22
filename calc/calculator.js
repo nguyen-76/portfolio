@@ -66,3 +66,8 @@ const erase = () => {
     operator = null;
     display.innerHTML = "";
 };
+
+const del = () => {
+    num1 = num1.slice(0, -1);
+    display.innerHTML = num1;
+  };
