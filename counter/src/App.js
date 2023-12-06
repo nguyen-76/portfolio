@@ -4,6 +4,14 @@ import "./App.css";
 function App() {
 const [count, setCount] = useState(0);
 let color = count > 0 ? "green" : count < 0 ? "red" : "black";
+// let color2;
+// if (count > 0) {
+//    color2 = "green";
+// } else if (count < 0) {
+//   color2 =" red";
+// } else { 
+//   color2 = "black";
+// }
 const increment = () => setCount(count + 1);
 const decrement = () => setCount(count - 1);
 const resetCount = () => setCount(0);
