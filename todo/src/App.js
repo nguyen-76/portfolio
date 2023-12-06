@@ -43,15 +43,17 @@ function App() {
   <div className="container">
     <Header title="Todo List" subTitle="Get one item done at a time." />
     <Tasklist 
-    tasks={tasks} 
-    showIncomplete={showIncomplete} 
-    setTaskStatus={setTaskStatus} 
-    removeTask={removeTask}
-    setShowIncomplete={setShowIncomplete} />
+      tasks={tasks} 
+      showIncomplete={showIncomplete} 
+      setTaskStatus={setTaskStatus} 
+      removeTask={removeTask}
+      setShowIncomplete={setShowIncomplete} 
+    />
     <AddTaskForm 
-    handleSubmit={handleSubmit}
-    newTask={newTask}
-    handleInputChange={handleInputChange} />
+      handleSubmit={handleSubmit}
+      newTask={newTask}
+      handleInputChange={handleInputChange} 
+    />
 </div>
   )
 }
