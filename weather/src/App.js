@@ -21,7 +21,7 @@ useEffect(() => {
       const data = await res.json();
       console.log(data);
       if (res.ok) {
-        setWeatherInfo(`${data.name} ${data.sys.country} ${data.weather[0].description} ${data.main.temp}Celsius`);
+        setWeatherInfo(`${data.name}, ${data.sys.country} ${data.weather[0].description}, ${data.main.temp}Celsius`);
         setErrorMes("");
       } else {
         setErrorMes(data.message);
