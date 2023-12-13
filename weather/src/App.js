@@ -48,10 +48,11 @@ const handleSumbit = (e) => {
     </form>
     {loading ? (<div>Loading...</div>) : (
       <>
-        {errorMes ? (<div style={{color: "red"}}>{errorMes}</div>) : (<div className="container">
+        {errorMes ? (<div style={{color: "red"}}>{errorMes}</div>) : (
+        <div className="container">
           <h1>Today's weather</h1>
           <div>{weatherInfo}</div>
-          </div>)}
+        </div>)}
       </>
     )}
 </>
