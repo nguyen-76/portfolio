@@ -19,7 +19,6 @@ useEffect(() => {
       const url = `${api.base}/weather?q=${searchCity}&units=metric&appid=${api.key}`;
       const res = await fetch(url);
       const data = await res.json();
-      console.log(data);
       if (res.ok) {
         setWeatherInfo(`${data.name}, ${data.sys.country} ${data.weather[0].description}, ${data.main.temp}Celsius`);
         setErrorMes("");
