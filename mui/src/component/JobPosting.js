@@ -8,7 +8,7 @@ function JobPosting({job}) {
 >
       <CardContent>
         <Typography gutterBottom variant="h5" component="div" fontSize={20}>
-          {job.city} : {job.title}
+          {job.title}
         </Typography>
         {job.skills.slice(0, 4).map((skill) => (
             <Chip key={skill} size="small" color="error" label={skill} />
