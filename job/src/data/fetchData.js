@@ -33,5 +33,9 @@ async function getJob(id) {
 
   return jobs.find((job) => job.id === id);
 }
+const fetchData = {
+  getJob,
+  getJobs
+};
 
-export { getJobs, getJob };
+export default fetchData;
